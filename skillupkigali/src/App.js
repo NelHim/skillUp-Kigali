@@ -9,10 +9,10 @@ import {
 import { Layout } from "./components/Layout";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About";
-import GetInspired from "./pages/GetInspired";
+import Stories from "./pages/Stories";
 import ShareYourStory from "./pages/ShareYourStory";
 import Media from "./pages/Media";
-// import Header from "./components/UI/Header";
+import StoryDetails from "./pages/StoryDetails";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,8 +20,9 @@ const router = createBrowserRouter(
       <Route path="/">
         <Route index element={<HomePage />} />
         <Route path="/about" element={<About/>} />
-        <Route path="/getInspired" element={<GetInspired/>} />
-        <Route path="/shareYourStory" element={<ShareYourStory/>} />
+        <Route path="/stories" element={<Stories />} />
+        <Route path="/stories/:id" element={<StoryDetails />} />
+        <Route path="/shareyourstory" element={<ShareYourStory/>} />
         <Route path="/media" element={<Media/>} />
       </Route>
       <Route path="*" element={<NotFound />} />

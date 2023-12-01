@@ -6,20 +6,20 @@ function Header() {
   return (
     <div className="flex justify-between">
       <Link to="/">
-        <img src={logo} alt="Logo" width={100} />
+        <img src={logo} alt="Logo" width={100} className="rounded-3xl" />
       </Link>
-      <ul className="flex first-line gap-20 mr-20 items-center">
-        <li className="font-bold text-xl">
+      <ul className="flex first-line gap-20 items-center">
+        <li className="font-bold text-base">
+          <Link to="/">Home</Link>
+        </li>
+        <li className="font-bold text-base">
           <Link to="/about">About</Link>
         </li>
-        <li className="font-bold text-xl">
-          <Link to="/getInspired">Get Inspired</Link>
+        <li className="font-bold text-base">
+          <Link to="/stories">Stories</Link>
         </li>
-        <li className="font-bold text-xl">
-          <Link to="/shareYourStory">Share your story</Link>
-        </li>
-        <li className="font-bold text-xl">
-          <Link to="/media">Media</Link>
+        <li className="font-bold text-base">
+          <Link to="/shareyourstory">Share your story</Link>
         </li>
       </ul>
     </div>
