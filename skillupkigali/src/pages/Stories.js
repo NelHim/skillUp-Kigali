@@ -15,7 +15,6 @@ function Stories() {
       return storyList
     }
     getStories().then((storyList) => { 
-      console.log(storyList, "storyList")
       setStories(storyList)
     }).catch((error) => {
       console.log(error, "error")
@@ -24,11 +23,11 @@ function Stories() {
    }, []);
 
   return (
-    <div className="mx-20 mt-10">
+    <div className="mt-10">
       <h1 className="text-center text-2xl font-semibold">
-        Learn how other entreprenuers did it
+        Learn how other entrepreneurs did it
       </h1>
-      <div className="mt-16 grid grid-cols-3 gap-16">
+      <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {stories.map((story) => (
           <Story
             name={story.name}

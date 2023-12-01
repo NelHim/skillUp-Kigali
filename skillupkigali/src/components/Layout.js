@@ -4,8 +4,8 @@ import Footer from "./UI/Footer";
 
 export function Layout() {
   return (
-    <div className="flex flex-col min-h-screen ">
-      <div className="mx-32 pt-3 mb-5">
+    <div className="flex flex-col min-h-screen container">
+      <div className="mx-5 sm:mx-10 xl:mx-32 pt-3 mb-5">
         <Header />
         <Outlet />
       </div>

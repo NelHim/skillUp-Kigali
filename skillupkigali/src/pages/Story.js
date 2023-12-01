@@ -18,14 +18,17 @@ const Story = ({ name, image, bookLink, id }) => {
             href={bookLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs font-bold mt-1"
+            className="text-xs font-bold mt-1 hover:text-[#0ccbf1d9] justify-self-start"
           >
             Read {name}'s book
           </a>
         ) : (
           "No Book"
         )}
-        <Link className="text-xs font-bold mt-1" to={`/stories/${id}`}>
+        <Link
+          className="text-xs font-bold mt-1 hover:text-[#0ccbf1d9] justify-self-start"
+          to={`/stories/${id}`}
+        >
           Learn more
         </Link>
       </div>
