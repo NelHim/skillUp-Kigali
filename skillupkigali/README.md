@@ -46,7 +46,7 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 # Deployed link
-https://655cf87b30c85108feab5d2c--wonderful-sawine-097aa0.netlify.app/
+https://wonderful-sawine-097aa0.netlify.app/
 
 ### Code Splitting
 
