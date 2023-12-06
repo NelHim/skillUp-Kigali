@@ -2,7 +2,7 @@ import React from "react";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../firebase";
 import { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 function StoryDetails() {
   const [story, setStory] = useState();
