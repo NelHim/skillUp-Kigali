@@ -27,7 +27,10 @@ const Story = ({ name, image, bookLink, id }) => {
         )}
         <Link
           className="text-xs font-bold mt-1 hover:text-[#0ccbf1d9] justify-self-start"
-          to={`/stories/${id}`}
+          to={{
+            pathname: `/stories/${id}`,
+            search: `?bookLink=${bookLink ? bookLink : ""}`,
+          }}
         >
           Learn more
         </Link>

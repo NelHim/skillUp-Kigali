@@ -2,12 +2,15 @@ import React from "react";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../firebase";
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
 
 function StoryDetails() {
   const [story, setStory] = useState();
-
   const { id } = useParams();
+  const location = useLocation();
+  const query = new URLSearchParams(location.search);
+  const bookLink = query.get("bookLink");
+  console.log(bookLink, "BookLink")
 
   useEffect(() => {
     async function getStory(storyId) {
@@ -35,6 +38,11 @@ function StoryDetails() {
             Who is {story?.name} :
           </h4>
           <p className="mt-5">{story?.storydetails}</p>
+          {bookLink && <div className="bg-blue-400 w-full text-white mt-10 p-2 rounded-md md:w-64 text-center hover:bg-blue-500 font-bold">
+            <a href={bookLink} target="_blank" rel="noopener noreferrer">
+              Read {story?.name}'s Biography
+            </a>
+          </div>}
         </div>
       </div>
     </div>
