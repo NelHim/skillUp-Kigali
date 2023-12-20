@@ -38,7 +38,7 @@ function StoryDetails() {
             Who is {story?.name} :
           </h4>
           <p className="mt-5">{story?.storydetails}</p>
-          {bookLink && <div className="bg-blue-400 w-full text-white mt-10 p-2 rounded-md md:w-64 text-center hover:bg-blue-500 font-bold">
+          {bookLink && <div className="bg-blue-400 w-full text-white mt-10 p-2 rounded-md md:w-80 text-center hover:bg-blue-500 font-bold">
             <a href={bookLink} target="_blank" rel="noopener noreferrer">
               Read {story?.name}'s Biography
             </a>

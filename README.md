@@ -1,3 +1,22 @@
+# Getting Started
+
+Follow the following steps to start this project locally:
+
+## Prerequisites
+
+- Node.js
+- npm
+
+
+## Installation 
+
+### Clone the repository
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
